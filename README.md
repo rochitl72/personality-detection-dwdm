@@ -6,34 +6,72 @@ This project classifies individuals into personality types — **Introvert**, **
 ---
 
 ## 🗃️ Folder Structure
+.
+├── .DS_Store
+├── .gitignore
+├── README.md
+├── data
+│   ├── form_responses.csv
+│   └── personality_kaggle.csv
+├── folder_structure.txt
+├── model_kaggle.py
+├── models
+│   ├── logistic_model.pkl
+│   └── random_forest_model.pkl
+├── output
+│   ├── class_distribution.png
+│   ├── form_class_distribution.png
+│   ├── form_heatmap.png
+│   ├── form_predictions_lr.txt
+│   ├── form_predictions_rf.txt
+│   ├── heatmap.png
+│   ├── logistic_report.txt
+│   └── random_forest_report.txt
+├── outputs
+│   ├── .DS_Store
+│   └── form_response_charts
+│       ├── How_adventurous_are_you?_(adventurousness).png
+│       ├── How_calm_and_emotionally_stable_are_you_under_stress?_(emotional_stability).png
+│       ├── How_comfortable_are_you_in_group_settings?_(group_comfort).png
+│       ├── How_comfortable_are_you_spending_time_alone?_(alone_time_preference).png
+│       ├── How_comfortable_are_you_taking_on_leadership_roles?_(leadership).png
+│       ├── How_comfortable_are_you_with_public_speaking?_(public_speaking_comfort).png
+│       ├── How_creative_do_you_consider_yourself?_(creativity).png
+│       ├── How_curious_are_you_to_explore_new_ideas_or_topics?_(curiosity).png
+│       ├── How_frequently_do_you_use_gadgets_or_tech_devices?_(gadget_usage).png
+│       ├── How_friendly_and_approachable_are_you?_(friendliness).png
+│       ├── How_good_are_your_active_listening_skills?_(listening_skill).png
+│       ├── How_interested_are_you_in_sports_or_physical_activity?_(sports_interest).png
+│       ├── How_much_do_you_enjoy_parties_or_social_events?_(party_liking).png
+│       ├── How_much_do_you_plan_ahead_before_making_decisions?_(planning).png
+│       ├── How_much_do_you_prefer_a_routine-based_lifestyle?_(routine_preference).png
+│       ├── How_much_do_you_prefer_working_in_teams_over_working_alone?_(work_style_collaborative).png
+│       ├── How_much_energy_do_you_gain_from_social_interactions?_(social_energy).png
+│       ├── How_much_time_do_you_spend_on_social_media_or_online_platforms?_(online_social_usage).png
+│       ├── How_often_do_you_act_on_impulse?_(spontaneity).png
+│       ├── How_often_do_you_engage_in_deep_or_introspective_thinking?_(deep_reflection).png
+│       ├── How_often_do_you_read_books_or_articles?_(reading_habit).png
+│       ├── How_often_do_you_seek_new_and_exciting_experiences?_(excitement_seeking).png
+│       ├── How_organized_are_you_in_your_daily_life?_(organization).png
+│       ├── How_quickly_do_you_usually_make_decisions?_(decision_speed).png
+│       ├── How_strong_is_your_desire_to_travel_and_explore_new_places?_(travel_desire).png
+│       ├── How_talkative_are_you_in_general?_(talkativeness).png
+│       ├── How_well_can_you_understand_others'_emotions?_(empathy).png
+│       ├── How_well_do_you_manage_stress_in_your_life?_(stress_handling).png
+│       ├── How_willing_are_you_to_take_risks?_(risk_taking).png
+│       ├── How_would_you_describe_your_personality_type?_(personality_type_user).png
+│       └── Timestamp.png
+├── predict_form.py
+├── preprocess_form.py
+├── preprocess_kaggle.py
+├── requirements.txt
+├── utils.py
+├── visualize_form.py
+├── visualize_form_responses.py
+└── visualize_kaggle.py
 
-personality_dwdm_project/
-│
-├── data/ # Contains raw CSV datasets
-│ ├── personality_kaggle.csv
-│ └── form_responses.csv
-│
-├── models/ # Saved ML models
-│ ├── logistic_model.pkl
-│ └── random_forest_model.pkl
-│
-├── output/ # Model evaluation reports and heatmaps
-├── outputs/ # Google Form bar charts per question
-│ └── form_response_charts/
-│
-├── preprocess_kaggle.py # Preprocessing function for Kaggle dataset
-├── preprocess_form.py # Preprocessing function for Form dataset
-├── model_kaggle.py # Training models on Kaggle dataset
-├── predict_form.py # Predicting personality types from form
-├── visualize_kaggle.py # Heatmap and charts for Kaggle
-├── visualize_form_responses.py # Bar graphs for form responses
-├── utils.py # Helper functions
-├── requirements.txt # All required libraries
-└── README.md # This file
+6 directories, 57 files
 
-yaml
-Copy
-Edit
 
 ---
 
